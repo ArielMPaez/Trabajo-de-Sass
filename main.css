@@ -60,7 +60,7 @@
   text-decoration: none;
 }
 
-@media (max-width: 413px) {
+@media (max-width: 600px) {
   .header {
     width: 100%;
     font-size: 7px;
