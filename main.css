@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background-color: #24245f;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 667px;
+}
+
+.header .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  margin-left: 5px;
+}
+
+.header .header__logo img {
+  width: 35px;
+  height: auto;
+}
+
+.header nav ul {
+  padding: 0;
+  margin: 20px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  font-size: 25px;
+}
+
+.header nav ul li {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* slider */
+.header__slider {
+  width: 100%;
+  height: 55rem;
+  overflow: hidden;
+  min-width: 667px;
+}
+
+.header__slider ul {
+  padding: 0px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300%;
+  -webkit-animation: cambio 15s infinite alternate;
+          animation: cambio 15s infinite alternate;
+}
+
+.header__slider ul li {
+  width: 100%;
+  height: auto;
+}
+
+.header__slider ul li img {
+  width: 100%;
+  height: auto;
+}
+
+@-webkit-keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  15% {
+    margin-left: 0%;
+  }
+  40% {
+    margin-left: -100%;
+  }
+  60% {
+    margin-left: -100%;
+  }
+  90% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  15% {
+    margin-left: 0%;
+  }
+  40% {
+    margin-left: -100%;
+  }
+  60% {
+    margin-left: -100%;
+  }
+  90% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}
+
+/* formulario */
+.contenedor {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(./imagenes/chica-con-cabello-como-olas-y-avion-de-papel-8046.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  min-width: 667px;
+}
+
+.contenedor .contenedor__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+  gap: 40px;
+}
+
+/* foooter */
+.footer {
+  background-color: #24245f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 667px;
+}
+
+.footer .footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer__links div a img {
+  width: 35px;
+  height: auto;
+  margin: 20px;
+}
+/*# sourceMappingURL=main.css.map */
