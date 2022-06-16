@@ -3,6 +3,25 @@ $colorUno:  rgb(36,36,95);
 $colorLetra: #fff;
 $tamLogos: 35px;
 
+$tamañoLetras: (
+    h1: 45px,
+    h2: 50px,
+);
+
+$h1: map-get($tamañoLetras, h1 );
+$h2: map-get($tamañoLetras, h2 );
+ 
+
+
+
+@mixin sombra {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .5);
+}
+
+ @mixin borde {
+     border-radius: 15px;
+ }
+
 
 
 * {
@@ -24,6 +43,12 @@ $tamLogos: 35px;
         align-items: center;
         gap: 20px;
         margin-left: 5px;
+
+        h1 {
+            font-size: $h1;
+            
+            
+        }
 
         img {
             width: $tamLogos;
@@ -80,7 +105,7 @@ $tamLogos: 35px;
 
 .header__slider {
     width: 100%;
-    height: 55rem;
+    height: 40rem;
     overflow: hidden;
     
 
@@ -131,7 +156,7 @@ $tamLogos: 35px;
     background-position: center;
     width: 100%;
     height: 600px;
-    
+
 
     .contenedor__form {
         display: flex;
@@ -140,6 +165,23 @@ $tamLogos: 35px;
         align-items: center;
         font-size: 25px;
         gap: 40px;
+ 
+
+
+        h2 {
+            font-size: $h2;
+            @include sombra;
+            @include borde;
+        }
+
+
+        div {
+            
+            label {
+                font-size: 28px;
+                @extend h2;
+            }
+        }
     }
 }
 
